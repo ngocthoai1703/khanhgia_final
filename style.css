@@ -82,7 +82,7 @@ body{font-family:'UTMAvo',Arial,sans-serif;font-size:13px;line-height:1.5;backgr
 
 
 
-div#wapper{margin:0 auto;width:100%;overflow-x:hidden;}
+div#wapper{margin:0 auto;width:100%;overflow-x:hidden; background-color: #F1F6FB;}
 
 
 
@@ -98,7 +98,18 @@ div#header .content_top{width:100%;max-width:1200px;margin:0 auto;position:relat
 
 
 
-.logo{display:inline-block;vertical-align:top;line-height:0;max-width:100%;max-height:75px;}
+.logo{display:inline-block;vertical-align:top;line-height:0;width: 50%;
+    max-height: 175px;
+    background-color: #15445E; }
+
+#social{
+	margin-left: 30px;
+}
+#social img {
+    max-height: 28px;
+    display: inline-block;
+    margin-right: 10px;
+}
 
 div#header .banner{display:inline-block;vertical-align:top;line-height:0;max-width:100%;max-height:170px;
 
@@ -187,7 +198,7 @@ div#header .banner{display:inline-block;vertical-align:top;line-height:0;max-wid
 
 	}
 
-	.col_w50{width:50%;float:left;}
+	.col_w50{width:50%;float:left; text-align: left;}
 
 	.col_w60{width:60%;float:left;}
 
@@ -669,9 +680,9 @@ div#header .banner{display:inline-block;vertical-align:top;line-height:0;max-wid
 
 
 
-														div#wap_footer{margin:0 auto;width:100%;position:relative;color:#000;background-color:#fff;}
+														div#wap_footer{margin:0 auto;width:100%;position:relative;color:#000;background-color:#15445E;}
 
-														div#wap_footer .content_ft{width:100%;max-width:850px;padding: 50px 0;margin:0 auto;text-align: center;font-size:15px}
+														div#wap_footer .content_ft{width:100%;max-width:1200px;padding: 80px 0;margin:0 auto;text-align: center;font-size:15px}
 
 														div#wap_footer .content_ft .ten_cty{width:100%;font-family:UTM_impact;font-size:28px;color:#FFF;display:inline-block;vertical-align:top;margin-bottom:10px}
 
@@ -713,7 +724,7 @@ div#header .banner{display:inline-block;vertical-align:top;line-height:0;max-wid
 
 
 
-																	#copy_right{width:100%;padding:7px;margin:0 auto;bottom:0;background:#007196;line-height:1em;color:#fff;font-size:13px;z-index:99;text-align:center}
+																	#copy_right{width:100%;padding:10px 0;margin:0 auto;bottom:0;line-height:1em;color:#fff;font-size:13px;z-index:99;text-align:left}
 
 																	#copy_right .txt1 {float:left;}
 
@@ -1219,6 +1230,25 @@ text-align: center;
 
 }
 
+.popup__detail {
+    color: #959595;
+}
+.popup__detail i, .popup__detail b {
+    color: #14425B;
+}
+.btn_dathang {
+    display: flex;
+}
+.addr {
+    text-align: left;
+    margin: 10px 0;
+}
+.price {
+    width: 100%;
+    text-align: left;
+    display: block;
+}
+
 .utilities {
     display: flex;
     flex-wrap: wrap;
@@ -1310,8 +1340,6 @@ text-align: center;
 	width: 50%;
 
 	background-color: #6eaed2;
-
-	margin-top: 10px;
 
 	text-align: center;
 

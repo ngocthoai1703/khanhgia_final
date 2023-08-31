@@ -169,7 +169,7 @@ div#main_content{
 	margin-bottom: 50px;
 }
 #filter--res .inner{
-	padding: 50px 20px 0;
+	padding: 10px 20px 0;
 	width: 100%;
 }
 #filter--res .inner .block .form__filter {
@@ -248,7 +248,46 @@ div.header {
 .wap_chat_zalo {
     z-index: 2222222
 }
+.banner p {
+    font-size: 35px;
+    padding: 10px 5px 20px 5%;
+}
+.img_banner {
+    text-align: center;
+    margin: 0 auto;
+    height: 500px;
+    background: url(images/back_banner.png) no-repeat center;
+    overflow: auto;
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+}
 
+#filter--res .inner .row {
+    width: 100%;
+}
+.pricemin:after, .pricemax:after{
+    display: none;
+}
+#filter--res .inner .row1 {
+    width: 90%;
+}
+.banner__info {
+    margin: 30px auto
+}
+
+#our__product .title {
+    
+    margin: 0 20px;
+}
+
+#gioithieu_index:after {
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+#contact__method ul h1 {
+    font-size: 25px;
+    }
 }
 @media screen and (max-width: 360px) {
 .dmsp-big{width:calc(100% - 20px)}
