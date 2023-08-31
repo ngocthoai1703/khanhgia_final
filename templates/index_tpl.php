@@ -41,9 +41,11 @@ $arr_loaitienich = explode(',',$room['id_loaitienich']);
 						<!-- <p class="address"><i class="fas fa-map-marker-alt"></i><?=$value['diachi']?></p> -->
 
 						<div class="addr"><b><?=_dientich?>:</b> <?=$value['dientich']?> m2</div>
-						<span class="price"><i class="fa fa-dollar-sign"></i><?=$value['gia']?> <?=_trieuthang?> - <?=$value['giangay']?> <?=_nganngay?></span>
+						<div class="btn_dathang">
+						<span class="price"><b>Giá thuê </b><br><i class="fa fa-dollar-sign"></i><?=$value['gia']?> <?=_trieuthang?> - <?=$value['giangay']?> <?=_nganngay?></span>
 
 						<a href="san-pham/<?=$value['tenkhongdau']?>.html" class="see__detail"><span><?=_xemchitiet?></span></a>
+						</div>
 					</div>
 			</li>
 		<?php } ?>

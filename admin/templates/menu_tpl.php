@@ -15,16 +15,16 @@
         <?php phanquyen_menu('Quản lý đơn đặt phòng','order','man',''); ?>
     </ul>
 </li>
-<!-- <li class="categories_li <?php if($_GET['com']=='news' ) echo ' activemenu' ?>" id="menu_tt"><a href="" title="" class="exp"><span>Quản lý tìm kiếm nâng cao</span><strong></strong></a>
+<li class="categories_li <?php if($_GET['com']=='news' ) echo ' activemenu' ?>" id="menu_tt"><a href="" title="" class="exp"><span>Quản lý tìm kiếm nâng cao</span><strong></strong></a>
     <ul class="sub">
-        <?php //phanquyen_menu('Quản lý danh mục 1','news','man_danhmuc','tintuc'); ?>
-        <?php //phanquyen_menu('Quản lý danh mục 2','news','man_list','tintuc'); ?>
+        <?php phanquyen_menu('Quản lý danh mục 1','news','man_danhmuc','tintuc'); ?>
+        <?php phanquyen_menu('Quản lý danh mục 2','news','man_list','tintuc'); ?>
         <?php //phanquyen_menu('Cập nhật số phòng ngủ','news','man_danhmuc','sphongngu'); ?>
-        <?php //phanquyen_menu('Cập nhật số diện tích','news','man_danhmuc','sdientich'); ?>
-        <?php //phanquyen_menu('Cập nhật số tiền để lọc','news','man_danhmuc','sgiamin'); ?>
-        <?php //phanquyen_menu('Cập nhật số tiền thấp nhất','news','man_danhmuc','sgiamax'); ?>
+        <?php phanquyen_menu('Cập nhật số diện tích','news','man_danhmuc','sdientich'); ?>
+        <?php phanquyen_menu('Cập nhật số tiền để lọc','news','man_danhmuc','sgiamin'); ?>
+        <?php phanquyen_menu('Cập nhật số tiền thấp nhất','news','man_danhmuc','sgiamax'); ?>
     </ul>
-</li> -->
+</li>
 <li class="categories_li <?php if($_GET['com']=='news' ) echo ' activemenu' ?>" id="menu_tt"><a href="" title="" class="exp"><span>Quản lý loại căn hộ</span><strong></strong></a>
     <ul class="sub">
         <?php phanquyen_menu('Cập nhật ','news','man_danhmuc','loaicanho'); ?>
@@ -93,6 +93,7 @@
         <?php phanquyen_menu('Hình background mục tìm kiếm','background','capnhat','bgsearch'); ?>
 
         <?php phanquyen_menu('Đối Tác','slider','man_photo','doitac'); ?>
+        <?php phanquyen_menu('Hình Icon MXH','slider','man_photo','social'); ?>
 
         <?php //phanquyen_menu('Quản lý quảng cáo 2 bên','slider','man_photo','letruot'); ?>
         <?php //phanquyen_menu('Cập nhật POP UP quảng cáo','background','capnhat','pupop'); ?>
