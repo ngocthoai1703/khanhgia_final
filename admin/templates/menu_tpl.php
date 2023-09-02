@@ -39,15 +39,17 @@
     <ul class="sub">
         <?php //phanquyen_menu('Quản lý danh mục 1','news','man_danhmuc','tintuc'); ?>
         <?php //phanquyen_menu('Quản lý danh mục 2','news','man_list','tintuc'); ?>
-        <?php phanquyen_menu('Tin tức','news','man','tintuc'); ?>
-        <?php phanquyen_menu('Cẩm nang du lịch','news','man','camnangdulich'); ?>
-        <?php phanquyen_menu('Khách hàng của chúng tôi','news','man','khachhang'); ?>
+        <?php //phanquyen_menu('Tin tức','news','man','tintuc'); ?>
+        <?php //phanquyen_menu('Cẩm nang du lịch','news','man','camnangdulich'); ?>
+        <?php phanquyen_menu('Câu chuyện dân cư','news','man','khachhang'); ?>
         <?php //phanquyen_menu('Chính sách (footer)','news','man','chinhsach'); ?>
     </ul>
 </li>
-<li class="categories_li <?php if($_GET['com']=='news' or $_GET['com']=='video') echo ' activemenu' ?>" id="menu_tt"><a href="" title="" class="exp"><span>Các hình thức liên hệ</span><strong></strong></a>
+<li class="categories_li <?php if($_GET['com']=='news' or $_GET['com']=='video') echo ' activemenu' ?>" id="menu_tt"><a href="" title="" class="exp"><span>Banner trang tìm kiếm</span><strong></strong></a>
     <ul class="sub">
-        <?php phanquyen_menu('Cập nhật','news','man','contact_method'); ?>
+        <?php phanquyen_menu('Cập nhật hình 1','slider','man_photo','slider2'); ?>
+        <?php phanquyen_menu('Cập nhật hình 2','slider','man_photo','slider3'); ?>
+        <?php phanquyen_menu('Cập nhật hình 3','slider','man_photo','slider4'); ?>
     </ul>
 </li>
 
@@ -63,13 +65,13 @@
 </li>
    
       
-<li class="categories_li <?php if($_GET['com']=='newsletter' || $_GET['com']=='lkweb' || $_GET['com']=='yahoo') echo ' activemenu' ?>" id="menu_nt"><a href="" title="" class="exp"><span>Đăng ký tư vấn</span><strong></strong></a>
+<!-- <li class="categories_li <?php if($_GET['com']=='newsletter' || $_GET['com']=='lkweb' || $_GET['com']=='yahoo') echo ' activemenu' ?>" id="menu_nt"><a href="" title="" class="exp"><span>Đăng ký tư vấn</span><strong></strong></a>
       	<ul class="sub">
         	<?php //phanquyen_menu('Quản lý liên kết web','lkweb','man','lkweb'); ?>
             <?php //phanquyen_menu('Quản lý hỗ trợ trực tuyến','yahoo','man','yahoo'); ?>
-            <?php phanquyen_menu('Quản lý Đăng ký tư vấn','newsletter','man',''); ?>    	
+            <?php //phanquyen_menu('Quản lý Đăng ký tư vấn','newsletter','man',''); ?>    	
         </ul>
-</li>
+</li> -->
    
       
 <?php /*?><li class="categories_li <?php if($_GET['com']=='database' || $_GET['com']=='backup') echo ' activemenu' ?>" id="menu_ntt"><a href="" title="" class="exp"><span>Database</span><strong></strong></a>
@@ -89,6 +91,7 @@
 
         <?php //phanquyen_menu('Hình đóng dấu','background','capnhat','watermark'); ?>
         <?php phanquyen_menu('Hình Banner','slider','man_photo','banner'); ?>
+        <?php phanquyen_menu('Tiện ích banner','background','capnhat','watermark'); ?>  
         
         <?php phanquyen_menu('Hình background mục tìm kiếm','background','capnhat','bgsearch'); ?>
 

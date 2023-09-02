@@ -110,8 +110,8 @@ $row_logo = $d->fetch_array();
         
         <ul id="list_menu" class="col_w60">
             
-                
-                    <li>
+                    <li><a class="<?php if($_REQUEST['com'] == 'san-pham') echo 'active'; ?>" href="gioi-thieu.html">Signature by Khánh Gia Apartment</a></li>
+                    <!-- <li>
                         <a class="<?php if($_REQUEST['com'] == 'san-pham') echo 'active'; ?>" href="san-pham.html">Signature by Khánh Gia Apartment</a>
                         <ul>
                             <?php 
@@ -135,7 +135,7 @@ $row_logo = $d->fetch_array();
                             </li>
                         <?php } ?>
                     </ul>
-                </li>
+                </li> -->
 
 
 

@@ -172,6 +172,7 @@ include_once _source."counter.php";
         <!-- <?php //if($template=='index') { include _template."layout/tintuc_index.php"; } ?> -->
 
         <!-- <?php //if($template=='index') { include _template."layout/camnang_dulich.php"; } ?> -->
+        <?php if($template=='index') { include _template."layout/blog.php"; } ?>
 
         <?php if($template=='index') { include _template."layout/khachhang.php"; } ?>
         <?php if($template=='index') { include _template."layout/banner.php"; } ?>

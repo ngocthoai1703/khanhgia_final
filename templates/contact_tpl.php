@@ -1,4 +1,16 @@
+<?php  include _template."layout/banner_timkiem.php"; ?> 
 
+<?php include _template."layout/gioithieu_index.php"; ?> 
+
+
+
+            
+
+<?php  include _template."layout/blog.php"; ?>
+<?php  include _template."layout/banner.php"; ?>
+
+
+<!-- 
 
 <div class="tieude_giua"><div><?=$title_cat?></div><span></span></div>
 <div class="box_container">
@@ -37,4 +49,4 @@
        <?=$company['map'];?>
 
    </div><!--.content--> 
-</div><!--.box_container--> 
+</div><!--.box_container-->  -->
