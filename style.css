@@ -576,7 +576,7 @@ div#header .banner{display:inline-block;vertical-align:top;line-height:0;max-wid
 
 
 
-									div#main_content{width:100%;max-width:1200px;margin:20px auto}
+									div#main_content{width:100%;max-width:100%;margin:20px auto}
 
 									.tieude_giua{font-size:22px;color:#000;width:100%;margin-bottom:20px;margin-top: 20px;
 
@@ -1015,18 +1015,17 @@ input#note{
 
 }
 
-#our__product,#canho__noibat,#canho__dathue{
 
-	max-width: 1366px;
+#our__product,#canho__noibat,#canho__dathue{
+		max-width: 1366px;
 
 	width: 100%;
 
 	margin: 0 auto;
 
-	/*padding: 85px 0 0;*/
+	padding: 85px 0 0;
 
 	text-align: center;
-
 }
 
 #tintuc_index,#camnang__dulich{
@@ -1050,6 +1049,46 @@ input#note{
 	text-align: left;
 }
 
+.image-grid {
+  --gap: 18px;
+  --num-cols: 3;
+  --row-height: 300px;
+
+  box-sizing: border-box;
+  padding: var(--gap);
+
+  display: grid;
+  grid-template-columns: repeat(var(--num-cols), 1fr);
+  grid-auto-rows: var(--row-height);
+  gap: var(--gap);
+
+  position: relative;
+}
+
+.image-grid > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.image-grid-col-2 {
+  grid-column: span 2;
+}
+
+.image-grid-row-2 {
+  grid-row: span 2;
+}
+.collection_detail_btn {
+    position: absolute;
+    bottom: 7%;
+    left: 4%;
+}
+.collection_detail_btn span {
+    background: #fff;
+    border-radius: 35px;
+    padding: 10px 20px 10px 20px;
+}
 #our__product .title,#canho__noibat .title,#canho__dathue .title,#tintuc_index .title{
 
 	text-transform: uppercase;
@@ -1089,8 +1128,22 @@ input#note{
 
 	position: relative;
 
+	
+
 }
 
+.list_room li{
+	display: none;
+}
+
+.list_room li:nth-child(1),
+.list_room li:nth-child(2),
+.list_room li:nth-child(3),
+.list_room li:nth-child(4),
+.list_room li:nth-child(5),
+.list_room li:nth-child(6){
+	display: inline-block;
+}
 
 
 .slick__news li .content{
@@ -1152,6 +1205,12 @@ text-align: center;
 
 	text-transform: none;
 
+}
+
+.watermark {
+	width: 1200px;
+    margin:30px auto;
+    border-radius: 30px;
 }
 
 .star{color: yellow}

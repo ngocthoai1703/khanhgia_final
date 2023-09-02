@@ -1,4 +1,6 @@
 
+<?php  include _template."layout/banner_timkiem.php"; ?>
+
 <input type="hidden" value="1" class="soluong"  />
 <h1 class="tieude_giua"><span><?=count($product)?> <?=$title_cat?></span></h1>
 
@@ -114,6 +116,9 @@
 <div class="pagination"><?=pagesListLimitadmin($url_link , $totalRows , $pageSize, $offset)?></div>
 
 </div><!---END .wap_item-->
+
+<?php  include _template."layout/blog.php"; ?>
+<?php  include _template."layout/banner.php"; ?>
 
 <?php }else{ ?>
 
