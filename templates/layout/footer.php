@@ -6,6 +6,11 @@ $d->query($sql_contact);
 $company_contact = $d->fetch_array();
 
 $d->reset();
+$sql1 = "select noidung$lang as noidung from #_about where type='lienhe'";
+$d->query($sql1);
+$lienhe = $d->fetch_array();
+
+$d->reset();
 $sql_logo1 = "select photo from #_background where type='logo' limit 0,1";
 $d->query($sql_logo1);
 $row_logo = $d->fetch_array();
@@ -26,15 +31,40 @@ $social=$d->result_array();
 
     <div class="content_ft" >
     
-        <div class="col_w50 wow fadeIn" data-wow-delay="500ms"  >
-            <a href="index.html"><img class="logo" src="<?=_upload_hinhanh_l.$row_logo['photo']?>" /></a>
+        <div class="col_w35 wow fadeIn" data-wow-delay="500ms"  >
+            <a href="index.html"><img class="logo_ft" src="images/logo_ft.png" /></a>
+            <!-- <a href="index.html"><img class="logo" src="<?=_upload_hinhanh_l.$row_logo['photo']?>" /></a> -->
             <div id="social">
          <?php foreach ($social as $key => $value) { ?>
           <a href="<?=$value['link']?>" target="_blank"><img src="<?=_upload_hinhanh_l.$value['photo']?>" ></a>
         <?php } ?>
         <div id="copy_right"><span>Copyright © Khanh An Apartment</span></div>
-    </div>
-</div>
+            </div>
+        </div>
+        <div class="col_w20 pdl25">
+        <h3 class="title_ft">Khánh An Apartment</h3>
+        <ul class="list_addr">
+            <li><a class="<?php if($_REQUEST['com'] == 'news') echo 'active'; ?>" href="tin-tuc.html">Tin tức - khuyến mãi</a></li>
+            <li><a class="<?php if($_REQUEST['com'] == 'gioi-thieu') echo 'active'; ?>" href="lien-he.html">Giới thiệu</a></li>
+       </ul>
+     </div>
+        <div class="col_w20 pdl25">
+            <h3 class="title_ft">Hỗ trợ</h3>
+            <ul class="list_addr">
+             <?php foreach ($chinhsach_ft as $key => $value2) { ?>
+               <li><a href="chinh-sach/<?=$value2['tenkhongdau']?>.html" ><?=$value2['ten']?></a></li>
+             <?php } ?>
+           </ul>
+         </div>
+
+          <div class="col_w27 pdl25">
+            <h3 class="title_ft">Liên hệ</h3>
+            <ul class="list_addr">
+             
+               <li><?=$lienhe['noidung']?></li>
+             
+           </ul>
+         </div>
       <!-- </div>
             <div class="address">
                 <?=$company_contact['noidung']?> 

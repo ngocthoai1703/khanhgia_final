@@ -1,4 +1,7 @@
-<?php  include _template."layout/banner_timkiem.php"; ?> 
+<?php  include _template."layout/banner_timkiem.php"; ?>
+<div class="box_container">
+<?=$company['map'];?>
+</div> 
 
 <?php include _template."layout/gioithieu_index.php"; ?> 
 
@@ -43,10 +46,10 @@
             
            
         </form>
-    </div><!--.frm_lienhe--> 
+    </div>.frm_lienhe--> 
         
         
-       <?=$company['map'];?>
+       
 
-   </div><!--.content--> 
-</div><!--.box_container-->  -->
+  <!--  </div> --><!--.content--> 
+<!-- </div> --><!--.box_container-->  -->

@@ -10,7 +10,7 @@
     <ul class="sub">
     	<?php phanquyen_menu('Quản lý quận','product','man_danhmuc','location'); ?>
         <?php phanquyen_menu('Quản lý huyện','product','man_list','location'); ?>
-        <?php phanquyen_menu('Quản lý đường','product','man_cat','location'); ?>
+        <?php //phanquyen_menu('Quản lý đường','product','man_cat','location'); ?>
         <?php phanquyen_menu('Quản lý sản phẩm','product','man','sanpham'); ?>
         <?php phanquyen_menu('Quản lý đơn đặt phòng','order','man',''); ?>
     </ul>
@@ -39,10 +39,10 @@
     <ul class="sub">
         <?php //phanquyen_menu('Quản lý danh mục 1','news','man_danhmuc','tintuc'); ?>
         <?php //phanquyen_menu('Quản lý danh mục 2','news','man_list','tintuc'); ?>
-        <?php //phanquyen_menu('Tin tức','news','man','tintuc'); ?>
+        <?php phanquyen_menu('Tin tức','news','man','tintuc'); ?>
         <?php //phanquyen_menu('Cẩm nang du lịch','news','man','camnangdulich'); ?>
         <?php phanquyen_menu('Câu chuyện dân cư','news','man','khachhang'); ?>
-        <?php //phanquyen_menu('Chính sách (footer)','news','man','chinhsach'); ?>
+        <?php phanquyen_menu('Cập nhật hỗ trợ','news','man','chinhsach'); ?>
     </ul>
 </li>
 <li class="categories_li <?php if($_GET['com']=='news' or $_GET['com']=='video') echo ' activemenu' ?>" id="menu_tt"><a href="" title="" class="exp"><span>Banner trang tìm kiếm</span><strong></strong></a>

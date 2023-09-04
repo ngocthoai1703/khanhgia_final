@@ -29,8 +29,9 @@ $p_danhmuc=$d->result_array();
             </div><!---END #slider--> 
 <div id="canho__dathue">
 	 
-	<h3 class="title"><?=_canhodathue?></h3>
-	<li><a href="gioi-thieu.html">Tất cả</a> </li>
+	<h3 class="title">Chi nhánh</h3>
+	<div class="te_chinhanh">
+	<li ><a href="gioi-thieu.html">Tất cả</a> </li>
 	<?php 
                             for($i = 0; $i < count($p_danhmuc); $i++){ 
                               $d->reset();
@@ -42,16 +43,13 @@ $p_danhmuc=$d->result_array();
                               <li>
                                 <a href="san-pham/<?=$p_danhmuc[$i]['tenkhongdau']?>/"><?=$p_danhmuc[$i]['ten']?></a>
                                 <?php if(count($p_list)>0) { ?>
-                                    <ul class="dm_cap2">
-                                        <?php for($j=0;$j<count($p_list);$j++) { ?>
-                                            <li><a href="san-pham/<?=$p_list[$j]['id']?>/<?=$p_list[$j]['tenkhongdau']?>/"><?=$p_list[$j]['ten']?></a></li>
-                                        <?php } ?>
-                                    </ul>
+                                    
                                 <?php } ?>
 
                             </li>
                         <?php } ?>
-	<ul class="list_room">
+                        </div>
+	<ul class="list_room1">
 		<?php foreach($product_so as $k => $value){	?>
 			<li>
 				<div class="image zoom_hinh">
@@ -64,8 +62,10 @@ $p_danhmuc=$d->result_array();
 					<span><i class="fa fa-th-large"></i><?=$value['dientich']?> m2</span>
 					<span><i class="fa fa-bed"></i><?=$value['sophongngu']?> <?=_phongngu?></span>
 				</div>
-				<p class="price">Giá: <?=$value['gia']?> <?=_trieuthang?> - <?=$value['giangay']?> <?=_nganngay?></p>
-				<a href="san-pham/<?=$value['tenkhongdau']?>.html" class="see__detail"><?=_xemchitiet?></a>
+				<div style="display: flex;">
+				<p class="price">Giá:<br> <?=$value['gia']?> <?=_trieuthang?> - <?=$value['giangay']?> <?=_nganngay?></p>
+				<a href="san-pham/<?=$value['tenkhongdau']?>.html" class="see__detail1"><?=_xemchitiet?></a>
+				</div>
 				<!-- <span class="sold__out">Sold</span> -->
 				</div>
 			</li>
@@ -80,14 +80,14 @@ $p_danhmuc=$d->result_array();
 
 <script type="text/javascript">
 	let loadMoreBtn = document.querySelector('#load_more');
-	let currentItem = 6;
+	let currentItem = 8;
 
 	loadMoreBtn.onclick = () =>{
-		let boxes = [...document.querySelectorAll('.list_room li')];
-		for (var i = currentItem; i < currentItem + 3 ; i++){
+		let boxes = [...document.querySelectorAll('.list_room1 li')];
+		for (var i = currentItem; i < currentItem + 4 ; i++){
 			boxes[i].style.display = 'inline-block';
 		}
-		currentItem += 3
+		currentItem += 4
 		if (currentItem >= boxes.length){
 			loadMoreBtn.style.display = 'none';
 		}
@@ -111,5 +111,5 @@ $p_danhmuc=$d->result_array();
         </div>
 
     </div><!--.content-->
-</div><!--.box_container--> -->
+</div><!--.box_container--> 
          

@@ -15,9 +15,9 @@ $row_logo = $d->fetch_array();
 
 <nav id="menu_mobi" style="height:0; overflow:hidden;">
     <ul>
-        
+        <li><a class="<?php if($_REQUEST['com'] == 'san-pham') echo 'active'; ?>" href="gioi-thieu.html">Signature by Khánh Gia Apartment</a></li>
             
-                <li>
+                <!-- <li>
                     <a class="<?php if($_REQUEST['com'] == 'san-pham') echo 'active'; ?>" href="san-pham.html"><?=_sanpham?></a>
                     <ul>
                         <?php 
@@ -41,7 +41,7 @@ $row_logo = $d->fetch_array();
                         </li>
                     <?php } ?>
                 </ul>
-            </li>
+            </li> -->
 
 
 
@@ -50,7 +50,7 @@ $row_logo = $d->fetch_array();
 
             
 
-            <li><a class="<?php if($_REQUEST['com'] == 'cam-nang-du-lich') echo 'active'; ?>" href="cam-nang-du-lich.html"><?=_camnangdl?></a> </li>
+            <!-- <li><a class="<?php if($_REQUEST['com'] == 'cam-nang-du-lich') echo 'active'; ?>" href="cam-nang-du-lich.html"><?=_camnangdl?></a> </li> -->
 
 
             
@@ -59,7 +59,7 @@ $row_logo = $d->fetch_array();
 
 
             <li><a class="<?php if($_REQUEST['com'] == 'lien-he') echo 'active'; ?>" href="lien-he.html">
-                <?=_lienhe?></a></li>
+                    Giới Thiệu</a></li>
 
 
             </ul>

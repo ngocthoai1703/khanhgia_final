@@ -637,7 +637,7 @@ $ds_photo=$d->result_array();
 
 
 			</div>
-			<div class="formRow">
+			<!-- <div class="formRow">
 
 				<label>Nằm trên đường:</label>
 
@@ -650,7 +650,7 @@ $ds_photo=$d->result_array();
 				<div class="clear"></div>
 
 
-			</div>
+			</div> -->
 
 
 			<div class="formRow none">
@@ -715,7 +715,7 @@ $ds_photo=$d->result_array();
 						<div class="formRow">
 
 
-							<label>Số nhà :</label>
+							<label>Số phòng :</label>
 
 							<div class="formRight">
 
@@ -730,7 +730,7 @@ $ds_photo=$d->result_array();
 						<div class="formRow">
 
 
-							<label>Lầu :</label>
+							<label>Phù hợp số người :</label>
 
 							<div class="formRight">
 
@@ -744,7 +744,7 @@ $ds_photo=$d->result_array();
 						<div class="formRow">
 
 
-							<label>Phòng số:</label>
+							<label>Loại giường:</label>
 
 							<div class="formRight">
 
