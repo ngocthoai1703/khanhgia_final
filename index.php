@@ -217,7 +217,7 @@ include_once _source."counter.php";
 
     <?php include _template."layout/giohang_ajax.php";?>
 
-    <?php include _template."layout/chat_facebook.php"; ?>
+    <?php //include _template."layout/chat_facebook.php"; ?>
 
     <?php //include _template."layout/phone2.php";?>
 
